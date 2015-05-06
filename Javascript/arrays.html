@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>Disappearing Circle</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        #circle {
+            width: 400px;
+            height: 400px;
+            border-radius: 200px;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+        <button id="stylesChanger">Change the text!</button>
+        <div id="firstDiv">This is some text</div>
+
+    <script type="text/javascript">
+
+    var myArray=new Array();
+
+    myArray[0]="pizza";
+    myArray[1]="chocolate";
+
+    myOtherArray=["rain","sunshine"];
+    myOtherArray.push("snow");
+    myOtherArray.splice(1, 0, "hail");
+
+    console.log(myOtherArray);
+
+
+    document.getElementById("stylesChanger").onclick=function () {
+
+        document.getElementById("firstDiv").innerHTML.myArray[1];
+    }
+    </script>
+</body>
+</html>

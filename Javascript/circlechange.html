@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>Disappearing Circle</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        #circle {
+            width: 400px;
+            height: 400px;
+            border-radius: 200px;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+        <div id="circle"></div>
+
+    <script type="text/javascript">
+
+    document.getElementById("circle").onclick=function () {
+    	document.getElementById("circle").style.display="none";
+    }
+    </script>
+</body>
+</html>
