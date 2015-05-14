@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lexie Martin's Workbook - For Loops</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+    <p>For Loops! With Cats!</p>
+    <p id="insertHere"></p>
+
+<script type="text/javascript">
+
+    //An array full of cats, because all my arrays are full of cats.
+
+    var myArray=["tabby", "rex", "maine coon"];
+
+    //An array full of flowers, because flowers are pretty.
+    var myOtherArray=["roses", "peonies", "pansies"];
+
+    for (var i=0; i<myOtherArray.length; i++) {
+        alert(myOtherArray[i]);
+    }
+
+    for (var i=0; i<myArray.length; i++) {
+        alert(myArray[i]);
+    }
+
+    document.getElementById("insertHere").innerHTML=myArray[0];
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lexie Martin's Workbook - js arrays</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+
+        <button id="stylesChanger">Change the text!</button>
+        <div id="firstDiv">This is some text</div>
+
+    <script type="text/javascript">
+
+    //An array full of cats, because cats are cool.
+
+    var myCatArray=new Array();
+
+    myCatArray[0]="persian";
+    myCatArray[1]="abyssinian";
+
+    //An array full of weather, because it's raining in Colorado and I am sad about it.
+
+    myOtherArray=["rain","sunshine"];
+    myOtherArray.push("snow");
+    myOtherArray.splice(1, 0, "hail");
+
+    console.log(myOtherArray);
+
+
+    document.getElementById("stylesChanger").onclick=function () {
+
+        document.getElementById("firstDiv").innerHTML.myArray[1];
+    }
+    </script>
+</body>
+</html>

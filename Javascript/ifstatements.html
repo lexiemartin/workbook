@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lexie Martin's Workbook - If Statements</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+    <p>Tell me if you are a cat. Type "cat" if you are, in fact, a cat.</p>
+    <input id="isCat" />
+    <button id="myButton">Submit</button>
+
+<script type="text/javascript">
+
+    //All of my workbook exercises have cats in them. This is just a fact of life.
+
+    document.getElementById("myButton").onclick=function() {
+
+        if (document.getElementById("isCat").value=="cat") {
+
+            alert("YOU'RE A KITTY!");
+        }
+        
+        else {
+            alert("You are not a cat. I am sad now and it's all your fault.")
+        }
+    }
+</script>
+
+</body>
+</html>
