@@ -2,15 +2,15 @@
 // problem. But the program says "Meow" and "Purr" instead
 // of "Fizz" and "Buzz" because I am a crazy cat lady.
 
-var total = 100;
-for (var i=1; i <= total; i++) {
+var totalCats = 100;
+for (var i=1; i <= totalCats; i++) {
     if (i % 15 === 0) {
-        console.log("FizzBuzz");
+        console.log("MeowPurr");
     }
     else if (i % 3 === 0) {
-        console.log("Fizz");
+        console.log("Meow");
     } else if (i % 5 === 0) {
-        console.log("Buzz");
+        console.log("Purr");
     } else {
     console.log(i);
     }
