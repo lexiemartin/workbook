@@ -1,0 +1,53 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function() {
+       // alert("HEY YAH");
+        $.ajax({
+          //get data from api.ipify.org
+          url: "https://api.ipify.org",
+          // if successful do something 
+          success: function(ip){
+            // add ip address to the page
+            $("#ip-address").text(ip);       
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <style>
+      body {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      h1 {
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        font-size: 36px;
+        color: #4C887E;
+        text-align: center;
+      }
+      .title {
+        padding: 10px;
+        border-bottom: 2px dashed #F59122;
+      }
+
+      #ip-address {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #685C4E;
+        text-align: center;
+      }
+    </style>
+    <h1 class="title">Weather App</h1>
+    <div id="ip-address">
+    </div>
+  </body>
+</html>
